@@ -217,7 +217,7 @@ class plgContentPagebreak extends JPlugin
 		$limitstart = $input->getUInt('limitstart', 0);
 		$showall = $input->getInt('showall', 0);
 		// TOC header.
-		$row->toc = '<div class="pull-right article-index">';
+		$row->toc .= '<div class="pull-right article-index">';
 
 		if($this->params->get('article_index') == 1)
 		{
